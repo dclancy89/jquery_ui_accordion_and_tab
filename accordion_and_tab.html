@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accordion and Tab</title>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<style>
+	  #draggable { width: 150px; height: 150px; padding: 0.5em; }
+	</style>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script >
+	  	$( function() {
+		    $( "#accordion" ).accordion();
+		    $( "#tabs" ).tabs();
+		    $( "#draggable" ).draggable();
+		  });
+  	</script>
+</head>
+<body>
+
+	<div id="tabs">
+	  <ul>
+	    <li><a href="#tabs-1">Accordion</a></li>
+	    <li><a href="#tabs-2">Boring Tab</a></li>
+	    <li><a href="#tabs-3">Draggable</a></li>
+	  </ul>
+	  <div id="tabs-1">
+	    <div id="accordion">
+		  <h3>HTML</h3>
+		  <div>
+		    <p>
+		    HTML is the structure of a web page
+		    </p>
+		  </div>
+		  <h3>CSS</h3>
+		  <div>
+		    <p>
+		    CSS gives it visual style!
+		    </p>
+		  </div>
+		  <h3>JavaScript</h3>
+		  <div>
+		    <p>
+		    JavaScript gives it cool interactions like the tabs and accordion. Even the drag! Below are some JavaScript Libraries
+		    </p>
+		    <ul>
+		      <li>jQuery</li>
+		      <li>jQueryUI</li>
+		    </ul>
+		  </div>
+		  <h3>AJAX</h3>
+		  <div>
+		    <p>
+		    AJAX is awesome because it lets you update content on a page without having to refresh it. Woah.
+		    </p>
+		  </div>
+		</div>
+
+
+	  </div>
+	  <div id="tabs-2">
+	    <p>This tab is pretty boring.</p>
+	  </div>
+	  <div id="tabs-3">
+	    <div id="draggable" class="ui-widget-content">
+		  <p>Drag me around</p>
+		</div>
+	  </div>
+</div>
+
+</body>
+</html>
